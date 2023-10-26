@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LES BOUCLES FOR , WHILE ET DO WHILE</title>
+</head>
+<body>
+    <h1>LES BOUCLES EN JAVASCRIPT</h1>
+    <p>Une boucle est une structure conditionnelle qui permet de répéter un certain nombre de fois du code, jusqu’à ce qu’un test ne soit plus vrai.</p>
+    <p>Il  existe deux principaux types de boucles :</p>
+    <ul>
+        <li>La boucle while (« tant que » en français) va nous permettre de répéter une série
+             d’instructions tant qu’une condition donnée est vraie c’est-à-dire tant que la
+              condition de sortie n’est pas vérifiée. </li>
+        <li>L'instruction do...while crée une boucle qui exécute une instruction jusqu'à ce 
+            qu'une condition de test ne soit plus vérifiée. La condition est testée après que
+             l'instruction soit exécutée, le bloc d'instructions défini dans la boucle est donc
+              exécuté au moins une fois.</li>
+        <li>Une boucle for répète des instructions jusqu'à ce qu'une condition donnée ne soit
+             plus vérifiée <br>Une boucle for contient trois « phases » à l’intérieur du couple 
+             de parenthèses : une phase d’initialisation, une phase de test
+              (condition de sortie) et une phase d’itération (généralement une incrémentation).
+               Chaque phase est séparée des autres par un point-virgule.</li>
+    </ul>
+    
+    <script>
+        // exercice d'entrainement
+         // le boucle while
+        /*let number = 0
+        while(number < 3){
+            console.log(number)
+            number++
+        }*/
+
+        // le boucle do while: dans ce cas on execute avant de verifier la condition ce qui veut dire que le code sera executer au mois une fois que la condition est fausse
+       
+        // let number = 0 
+        // do{
+        //     console.log(number)
+        //     number++
+
+        // }
+        // while(number < 3)
+
+        // le boucle for
+        // for(let i = 0 ; i < 5 ; i++){
+        //     console.log(i)
+        // }
+        // exercice1
+    //    let boucle = prompt('Les boucles permettent de répéter des actions simplement et rapidement. Il y a différents types de boucles parmis lesquelles : for , while , do while')
+    //    console.log(boucle)
+        
+    //    switch(boucle){
+    //         case 'for':{
+    //             alert('Une boucle for répète des instructions jusqu\'à ce qu\'une condition donnée ne soit plus vérifiée.  Une boucle for s\'utilise de la façon suivante : \n for ([expressionInitiale]; [condition]; [expressionIncrément]) \n   instruction');
+    //             break;
+    //         }
+    //         case 'while':{
+    //             alert('Une instruction while permet d\'exécuter une instruction tant qu\'une condition donnée est vérifiée.Cette instruction s\'utilise de la façon suivante \n while (condition)\n instructio');
+    //             break;
+    //         }
+    //         case 'do while':{
+    //             alert('L\'instruction do...while permet de répéter un ensemble d\'instructions jusqu\'à ce qu\'une condition donnée ne soit plus vérifiée Une instruction do...while s\'utilise de la façon suivante : \n do \n instruction  \n while (condition)');
+    //             break;
+    //         }
+    //         default :{
+    //             alert('veillez choisir une boucle')
+    //         }
+    //     }
+
+        // exercice2
+        let n = prompt('donner un entier n')
+
+        for(let i = 1 ; i <= 10 ; i = i + 1){
+        console.log('n * ' + i + ' = ' + i*n)
+   
+        }
+    </script>
+</body>
+</html>
